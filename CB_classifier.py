@@ -11,8 +11,8 @@ X_test = test_df.drop(['search_id', 'target'], axis=1)
 y_test = test_df['target']
 
 model = CatBoostClassifier(
-    iterations=210,
-    learning_rate=0.1,
+    iterations=228,
+    learning_rate=0.978,
     depth=6,
     loss_function='Logloss',
     verbose=False
