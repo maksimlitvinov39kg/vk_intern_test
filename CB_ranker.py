@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.metrics import ndcg_score
 from catboost import CatBoostRanker, Pool
 
-train_df = pd.read_csv('data/train_df.csv')
-test_df = pd.read_csv('data/test_df.csv')
+train_df = pd.read_csv('data/vk_train_df.csv')
+test_df = pd.read_csv('data/vk_test_df.csv')
 
 X_train = train_df.drop(['search_id', 'target'], axis=1)
 y_train = train_df['target']
